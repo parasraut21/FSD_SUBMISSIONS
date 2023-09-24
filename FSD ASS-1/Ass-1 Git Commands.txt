@@ -1,0 +1,681 @@
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~
+$ mkdir FSDLab1
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+'Cisco Packet Tracer 6.2sv'/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ FSDLab1/
+ Favorites/
+ GNS3/
+ Histogram.ipynb
+ IntelGraphicsProfiles/
+'Lab1-Data cleaning PB16.ipynb'
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{4ce2c1ad-5d59-11ec-931c-ecb1d75edcf2}.TM.blf
+ NTUSER.DAT{4ce2c1ad-5d59-11ec-931c-ecb1d75edcf2}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{4ce2c1ad-5d59-11ec-931c-ecb1d75edcf2}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneAPI.ipynb
+ OneDrive/
+'PRIYAL DWDM ASSIGNMENT 1.ipynb'
+ Pictures/
+ PrintHood@
+'Priyal DWDM.ipynb'
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Untitled1.ipynb
+ Untitled2.ipynb
+ Videos/
+ WorldCupMatches_new.csv
+ adult.csv
+ anaconda3/
+ combined_csv.csv
+ diamonds.csv
+ eclipse/
+ eclipse-workspace/
+ heatmap_pearson.png
+ lab/
+'lab 3.12.21.ipynb'
+ myproject/
+ myproject1/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ sdpod_agent/
+ sharan/
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~
+$ cd FSDLab1/
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1
+$ echo "Hello World"
+Hello World
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1
+$ echo "Hello World" >>sampleFile.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1
+$ cat sampleFile.txt
+Hello World
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1
+$ git init
+Initialized empty Git repository in C:/Users/computer/FSDLab1/.git/
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git add sampleFile.txt
+warning: in the working copy of 'sampleFile.txt', LF will be replaced by CRLF th
+e next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sampleFile.txt
+
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ echo
+
+'
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ echo "Hello World" >> sampleFile2.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sampleFile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sampleFile2.txt
+
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git add sampleFile2.txt
+warning: in the working copy of 'sampleFile2.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sampleFile.txt
+        new file:   sampleFile2.txt
+
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git commit -m "Two new Files Added"
+[master (root-commit) ecd6b01] Two new Files Added
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 sampleFile.txt
+ create mode 100644 sampleFile2.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ echo "Bye Bye World" >> sampleFile2.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sampleFile2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git add sampleFile2.txt
+warning: in the working copy of 'sampleFile2.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sampleFile2.txt
+
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git commit -m "Second File Added"
+[master 7e792aa] Second File Added
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aborting commit due to empty commit message.
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git commit -m "third commit"
+[master 8cde9f0] third commit
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sampleFile3.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git log
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6 (HEAD -> master)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git checkout -b "7e792aa83e086c16e45673aeebf65d4e0743f230"
+Switched to a new branch '7e792aa83e086c16e45673aeebf65d4e0743f230'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git status
+On branch 7e792aa83e086c16e45673aeebf65d4e0743f230
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git log
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6 (HEAD -> 7e792aa83e086c16e45673aeebf65d4e0743f230, master)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ echo "This is the new file" >> sampleFile4.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git add sampleFile4.txt
+warning: in the working copy of 'sampleFile4.txt', LF will be replaced by CRLF the next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git status
+On branch 7e792aa83e086c16e45673aeebf65d4e0743f230
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sampleFile4.txt
+
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git commit -m "Fourth File Created"
+[7e792aa83e086c16e45673aeebf65d4e0743f230 5e68b04] Fourth File Created
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sampleFile4.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git status
+On branch 7e792aa83e086c16e45673aeebf65d4e0743f230
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git log
+commit 5e68b0407ff5d43aae1ae552eea341203dd2ea33 (HEAD -> 7e792aa83e086c16e45673aeebf65d4e0743f230)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:07:54 2023 +0530
+
+    Fourth File Created
+
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6 (master)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (7e792aa83e086c16e45673aeebf65d4e0743f230)
+$ git switch master
+Switched to branch 'master'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git log
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6 (HEAD -> master)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git merge dev
+merge: dev - not something we can merge
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git branch dev
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git switch dev
+Switched to branch 'dev'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ echo "last file" >> last.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ git add last.txt
+warning: in the working copy of 'last.txt', LF will be replaced by CRLF the next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ git commit -m "last file added"
+[dev 2329345] last file added
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 last.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ git log
+commit 2329345828e2fc50f3dc006fbd9d2ee07e1b2897 (HEAD -> dev)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:23:41 2023 +0530
+
+    last file added
+
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6 (master)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev)
+$ git switch master
+Switched to branch 'master'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git merge dev
+Updating 8cde9f0..2329345
+Fast-forward
+ last.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 last.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git log
+commit 2329345828e2fc50f3dc006fbd9d2ee07e1b2897 (HEAD -> master, dev)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:23:41 2023 +0530
+
+    last file added
+
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:53:52 2023 +0530
+
+    Two new Files Added
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git branch dev2
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ echo "new branch" >> newfile.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git add newfile.txt
+warning: in the working copy of 'newfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git commit -m "dev 2 created"
+[master 13161a7] dev 2 created
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git switch dev2
+Switched to branch 'dev2'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev2)
+$ echo "new branch file" >> dev2file.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev2)
+$ git add dev2file.txt
+warning: in the working copy of 'dev2file.txt', LF will be replaced by CRLF the next time Git touches it
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev2)
+$ git commit -m "changes made to dev 2"
+[dev2 8f2d2bb] changes made to dev 2
+ Committer: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dev2file.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev2)
+$ git status
+On branch dev2
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (dev2)
+$ git switch master
+Switched to branch 'master'
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git merge dev2
+Merge made by the 'ort' strategy.
+ dev2file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dev2file.txt
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git log
+commit 55a3e44a5b8a13847620eb667f11f5e13242ea08 (HEAD -> master)
+Merge: 13161a7 8f2d2bb
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:33:04 2023 +0530
+
+    Merge branch 'dev2'
+
+commit 8f2d2bb534e8f823a37490a3f44d119b2fa70a0f (dev2)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:32:09 2023 +0530
+
+    changes made to dev 2
+
+commit 13161a7175201e8ff8adf49b67fb0e2d20bd0e20
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:30:22 2023 +0530
+
+    dev 2 created
+
+commit 2329345828e2fc50f3dc006fbd9d2ee07e1b2897 (dev)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:23:41 2023 +0530
+
+    last file added
+
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+!q:
+/usr/bin/bash: line 1: q:: command not found
+!done  (press RETURN)
+...skipping...
+
+commit 8f2d2bb534e8f823a37490a3f44d119b2fa70a0f (dev2)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:32:09 2023 +0530
+
+    changes made to dev 2
+
+commit 13161a7175201e8ff8adf49b67fb0e2d20bd0e20
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:30:22 2023 +0530
+
+    dev 2 created
+
+commit 2329345828e2fc50f3dc006fbd9d2ee07e1b2897 (dev)
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:23:41 2023 +0530
+
+    last file added
+
+commit 8cde9f0a4459e8b7d635fd39ec36093d0c74f7b6
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 06:02:41 2023 +0530
+
+    third commit
+
+commit 7e792aa83e086c16e45673aeebf65d4e0743f230
+Author: computer <computer@WPUDESK48422.mitwpu.edu.in>
+Date:   Tue Aug 8 05:57:07 2023 +0530
+
+    Second File Added
+
+commit ecd6b018488b6889640e74dc8e285eaa10599780
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WPUDESK48422+computer@WPUDESK48422 MINGW64 ~/FSDLab1 (master)
+$
+
